@@ -23,6 +23,9 @@ public class Application extends Controller {
     	return ok(login.render(Form.form(Login.class)));
     	
     }
+    public static Result team(){
+        return ok(team.render());
+    }
     public static Result authenticate(){
     	Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
     	if(loginForm.hasErrors()){
