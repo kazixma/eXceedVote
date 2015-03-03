@@ -1,62 +1,10 @@
-<html>
-<head>
-	<title>Team</title>
-	 <link rel="stylesheet" media="screen" href="@routes.Assets.at("uikit/css/uikit.css")">
+@(message: String) @index("eXceed Vote") {
+	 
 	 <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/team.css")">
-	 <script type="text/javascript" src="@routes.Assets.at("uikit/js/jquery.js")"></script>
-	 <script type="text/javascript" src="@routes.Assets.at("uikit/js/uikit.js")"></script>
-     <link rel="stylesheet" href="@routes.Assets.at("uikit/css/components/slideshow.css")">
-     <link rel="stylesheet" href="@routes.Assets.at("uikit/css/components/slidenav.css")">
-     <script type="text/javascript" src="@routes.Assets.at("uikit/js/components/slideshow.js")"></script>
-     <script type="text/javascript" src="@routes.Assets.at("uikit/js/components/slideshow-fx.js")"></script>
+	
 </head>
 <body>
-    <!-- head -->
-	<nav class="uk-navbar" id="navtop">
-		<ul class="uk-navbar-nav">
-            <li><a class="uk-text-large" id="blueText" href=""><b>eXceed</b> vote</a></li>
-        </ul>
-        <div class="uk-navbar-flip">
-        	<ul class="uk-navbar-nav">
-            	<li><a class="uk-text-large" id="blueText" href=""><b>sign</b> out</a></li>
-        	</ul>
-    	</div>
-    </nav>
+   
 
-    <!-- content -->
-    <div class="uk-container-center uk-text-center" id="slide">
-    	<div class="uk-slidenav-position" data-uk-slideshow="{animation: 'swipe'}">
-            <ul class="uk-slideshow">
-                <li><img src="@routes.Assets.at("images/test.png")"></img></li>
-                <li><img src="@routes.Assets.at("images/test2.png")"></img></li>
-            </ul>
-            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba( 255,255,255,0.4)"></a>
-            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
-        </div>
-        <div class="uk-text-large" id="whiteText">	<b>Monkey fever</b> <br> by SKE12 </div>
-        <div class="uk-text-large" id="whiteText">
-		     @for(j <- 1 to 5){
-			   <span id="blueText"> Vote@j: </span>
-				    @for(i <- 1 to 5){
-					   <a class="uk-icon-star" id="whiteText"></a>
-				    } <a id="blueText">no vote</a>
-            <br>
-			}
-        </div>
-        <br>
-        <button class="uk-icon-save" ></button>
-        <button class="uk-button" type="submit" id="submitBtn"> submit </button>
-        <div class="uk-text-large" id="whiteText">
-                1.) gu saint 123<br>
-                1.) gu saint 123<br>1.) gu saint 123<br>1.) gu saint 123<br>
-        </div>
-        <form>
-            <div id="whiteText"><b>COMMENT</b><br>
-                <input type="text"></input>
-                <button class="uk-icon-reply"></button>
-            </div>
-        </form>
-        <br>
-    </div>
-</body>
-</html>	
+
+}	

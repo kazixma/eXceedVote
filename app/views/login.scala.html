@@ -1,7 +1,12 @@
 @(form: Form[Application.Login])
-@main("Welcome to Play") {
 
+@index("Welcome to Play"){
 @helper.form(routes.Application.authenticate){
+
+</head>
+<body >
+
+			
 			<h1>Sign in</h1>
 			@if(form.hasGlobalErrors){
 				<p class="error">
@@ -23,4 +28,3 @@
 
 }
 
-	<!---->

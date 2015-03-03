@@ -12,19 +12,19 @@ import models.*;
 
 public class Application extends Controller {
 
-    public static Result index() {
+    public static Result main() {
     	
     	
     		
     	
-        return ok(index.render("5") );
+        return ok(main.render("5") );
     }
     public static Result login(){
     	return ok(login.render(Form.form(Login.class)));
     	
     }
     public static Result team(){
-        return ok(team.render());
+        return ok(team.render("team"));
     }
     public static Result authenticate(){
     	Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
@@ -36,7 +36,7 @@ public class Application extends Controller {
     		
     		session().clear();
     		session("username",loginForm.get().username);
-    		return redirect(routes.Application.index());	
+    		return redirect(routes.Application.main());	
     			
     	}
     

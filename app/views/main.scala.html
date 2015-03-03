@@ -1,61 +1,16 @@
-@(title: String)(content: Html)
+@(message: String) @index("eXceed Vote") {
 
-<!DOCTYPE html>
-
-<html>
-<head>
-
-<title>@title</title>
-<script src="@routes.Assets.at("uikit/js/jquery.js")" type="text/javascript"></script>
-
-<link rel="stylesheet" media="screen" href="@routes.Assets.at("uikit/css/uikit.min.css")">
-<link rel="stylesheet" media="screen" href="@routes.Assets.at("semantic/dist/semantic.min.css")">
-<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-<script src="@routes.Assets.at("uikit/js/uikit.min.js")" type="text/javascript"></script>
-<script src="@routes.Assets.at("javascripts/js/typed.js")" type="text/javascript"></script>
-<script src="@routes.Assets.at("semantic/dist/semantic.min.js")" type="text/javascript"></script>
-<style>
-    
-.ui.card{
-	box-shadow:0 3px 0 0 #0BFFEC,0 0 0 3px #11DBF5 ;
-	background-color:rgb(11, 11, 11);
-	color:WHITE;
-	 
- }
-
-
-</style>
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/_main.css")">
 </head>
-<body style="background:BLACK;">
-<nav class="uk-navbar" style="background:rgb(24, 23, 23);">
-		<a href="#my-id" class="uk-navbar-toggle" data-uk-offcanvas></a>
-</nav>
+<body >
+<nav id="bar" class="navbar navbar-default" role="navigation">
+<div class="btn-group">
 
-	
-	
-	@content
-	
-	
-	
-	
+  <button id="menu" type="button" class="glyphicon glyphicon-align-justify" data-toggle="dropdown" ></button>
 
-
-
-<div id="my-id" class="uk-offcanvas  uk-text-center ">
-		<div class="uk-offcanvas-bar ">
-		
-		</div>
-
+ 
 </div>
 
 
 
-
-
-
-
-
-
-		
-</body>
-</html>
+}

@@ -1,0 +1,18 @@
+#menu{
+	color: #00CFFF;
+	background-color:#181818 ;
+	border: none;
+	width: 40px;
+}
+#bar{
+	
+	border-radius:0px;
+	background: #181818;
+	
+	border:none;
+}
+.glyphicon {
+
+	line-height: 3;
+
+}
